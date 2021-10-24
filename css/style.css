@@ -1,375 +1,409 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
-/* font-family: 'Playfair Display', serif;  */
-/* font-family: 'Ubuntu', sans-serif;  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
 }
-
-/* header part css start */
+/* header part css starts */
+.header {
+  background-color: #f6f9f9;
+}
 header {
-  width: 90%;
+  width: 80%;
   margin: auto;
+  display: inline-block;
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  height: 100px;
+  align-items: center;
 }
 .logo {
+  width: 20%;
 }
 .logo img {
 }
 nav {
-  width: 40%;
+  width: 30%;
 }
 nav ul {
-  list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+
+  text-transform: uppercase;
+  list-style: none;
 }
 nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Playfair Display", serif;
-  color: #626262;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3950;
 }
-/* header part css end */
-
-/* banner part css start */
+/* header part css ends */
+/* banner part css starts */
 .banner {
-  width: 90%;
-  margin: auto;
-  margin-top: 50px;
-}
-.banner img {
-  width: 100%;
-}
-/* banner part css end */
-
-/* photodiary css start  */
-.photodiary {
-  width: 80%;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.photodiary h5 {
-  color: #c2bcb0;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: "Ubuntu", sans-serif;
-}
-.photodiary h1 {
-  color: #626262;
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
-}
-.photodiary p {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  line-height: 20px;
-  font-weight: 400px;
-}
-/* photodiary css end  */
-
-/* lifestyle css start  */
-.lifestyle {
-  margin-top: 50px;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center center;
+  background-size: cover;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_content {
+  text-align: center;
+}
+.banner_content h1 {
+  font-size: 120px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+.banner_content span {
+  height: 1.5px;
+  width: 100%;
+  display: block;
+  background-color: #15a4fa;
+}
+.banner_content p {
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  margin: 30px 0px;
+}
+.banner_content input {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid #15a4fa;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.banner_content input:hover {
+  background-color: #15a4fa;
+}
+.icon {
+  color: white;
+  font-size: 30px;
+  margin-top: 100px;
+  animation: up-down 1.5s infinite linear alternate;
+}
+.icon i {
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+/* banner part css ends */
+/* simple & pure design css starts */
+.simple_design {
+  background-color: #f6f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-family: "Lato", sans-serif;
+  color: #2d3950;
+  text-align: center;
+}
+.simple_content {
+  width: 80%;
+  line-height: 30px;
+}
+.simple_content h1 {
+  font: 40px;
+}
+.simple_content p {
+  margin-top: 20px;
+  font: 20px;
+}
+/* simple & pure design css ends */
+/* feature section css starts */
+.feature {
+  background-color: white;
+  height: 350px;
+  font-family: "Lato", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
-  justify-content: space-between;
 }
-.lifestyle_one {
-  width: 48%;
+.feature_content {
+  text-align: center;
+  width: 30%;
 }
-.lifestyle_one img {
-  width: 100%;
-}
-.lifestyle_one h5 {
-  color: #c2bcb0;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: "Ubuntu", sans-serif;
-}
-.lifestyle_one h1 {
-  color: #626262;
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
-}
-.lifestyle_one p {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  line-height: 20px;
-  font-weight: 400px;
-}
-.lifestyle_two {
-  width: 48%;
-}
-.lifestyle_two img {
-  width: 100%;
-}
-.lifestyle_two h5 {
-  color: #c2bcb0;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: "Ubuntu", sans-serif;
-}
-.lifestyle_two h1 {
-  color: #626262;
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
-}
-.lifestyle_two p {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  line-height: 20px;
-  font-weight: 400px;
-}
-.lifestyle_three {
-  width: 48%;
-  margin-bottom: 100px;
-}
-.lifestyle_three img {
-  margin-top: 100px;
-  width: 100%;
-}
-.lifestyle_three h5 {
-  color: #c2bcb0;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: "Ubuntu", sans-serif;
-}
-.lifestyle_three h1 {
-  color: #626262;
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
-}
-.lifestyle_three p {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  line-height: 20px;
-  font-weight: 400px;
-}
-.lifestyle_four {
-  width: 48%;
-  margin-bottom: 100px;
-}
-.lifestyle_four img {
-  width: 100%;
-  margin-top: 100px;
-}
-.lifestyle_four h5 {
-  color: #c2bcb0;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: "Ubuntu", sans-serif;
-}
-.lifestyle_four h1 {
-  color: #626262;
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
-}
-.lifestyle_four p {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  line-height: 20px;
-  font-weight: 400px;
-}
-/* lifestyle css end  */
+.feature_content_icon {
+  font-size: 50px;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  color: white;
+  /* for exactly middle */
+  line-height: 100px;
+  margin-bottom: 25px;
 
-/* newsletter css start  */
-.newsletter {
-  background: #f0f0f0;
-  padding: 80px 0px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,207cca+0,207cca+0,207cca+49,207cca+49,207cca+49,207cca+49,207cca+50,2989d8+50,2989d8+50,5fc3ff+100 */
+  background: #48baff; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #48baff 0%,
+    #207cca 0%,
+    #207cca 0%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 50%,
+    #2989d8 50%,
+    #2989d8 50%,
+    #5fc3ff 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #48baff 0%,
+    #207cca 0%,
+    #207cca 0%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 50%,
+    #2989d8 50%,
+    #2989d8 50%,
+    #5fc3ff 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #48baff 0%,
+    #207cca 0%,
+    #207cca 0%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 49%,
+    #207cca 50%,
+    #2989d8 50%,
+    #2989d8 50%,
+    #5fc3ff 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
 }
-.news {
+.feature_content_icon i {
+}
+.feature_content h1 {
+  font-size: 20px;
+}
+.feature_content p {
+  font-size: 15px;
+  color: #6b717e;
+  margin-top: 25px;
+}
+/* feature section css ends */
+/* showcase setction css starts */
+.showcase {
+  background-color: #f6f9f9;
+  text-align: center;
+}
+.showcase_section {
+  width: 80%;
   margin: auto;
-  width: 360px;
+  padding: 60px;
+}
+.showcase_content {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.showcase h1 {
+  font-size: 41px;
+  font-family: "Lato", sans-serif;
+}
+.showcase p {
+  margin-top: 30px;
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+.show {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.showcase_image {
+  width: 30%;
   position: relative;
 }
-.news h1 {
-  color: #333333;
-  font-size: 30px;
-  font-family: 400px;
-  font-family: "Playfair Display", serif;
+.item {
+  position: relative;
+  line-height: 0px;
 }
-
-.news input {
-  margin-top: 80px;
-  color: #888888;
-  border: none;
-  background: transparent;
-  border-bottom: 3px solid black;
-  width: 360px;
-  padding: 10px 0px;
-}
-.send {
+.item::after {
+  content: " ";
   position: absolute;
-  right: 0px;
-  bottom: 8px;
+  width: 100%;
+  height: 0%;
+  background-color: #2babfabd;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
 }
-input::placeholder {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
+.item:hover::after {
+  height: 100%;
+  bottom: 100%;
 }
-/* newsletter css end  */
-
-/* Footer lifstyle css start  */
-.lifestyle_five {
-  width: 48%;
-  margin-bottom: 50px;
-}
-.lifestyle_five img {
-  margin-top: 100px;
+.item img {
   width: 100%;
 }
-.lifestyle_five h5 {
-  color: #c2bcb0;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: "Ubuntu", sans-serif;
+.icon_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
 }
-.lifestyle_five h1 {
-  color: #626262;
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
+.icon_box ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
-.lifestyle_five p {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  line-height: 20px;
-  font-weight: 400px;
+.icon_box ul li {
+  border: 0.5px solid white;
+  padding: 8px;
+  border-radius: 5px;
+}
+.showcase_image:hover .icon_box {
+  opacity: 1;
+}
+/* showcase setction css ends */
+/* newsletter section css starts */
+.contact {
+  background-image: url(../images/subscribe1.png);
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-color: #2b364b;
+  background-blend-mode: color;
 }
 
-.lifestyle_six {
-  width: 48%;
-  margin-bottom: 50px;
+.contact_details {
+  width: 50%;
+  margin: auto;
+  font-family: "Lato", sans-serif;
 }
-.lifestyle_six img {
-  margin-top: 100px;
-  width: 100%;
-}
-.lifestyle_six h5 {
-  color: #c2bcb0;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: "Ubuntu", sans-serif;
-}
-.lifestyle_six h1 {
-  color: #626262;
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
-}
-.lifestyle_six p {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  line-height: 20px;
-  font-weight: 400px;
-}
-/* Footer lifstyle css end  */
-
-/* load more section css start  */
-.load {
+.contact_header {
+  color: white;
   text-align: center;
-  padding: 100px;
+  padding: 50px 0px;
 }
-.load_more {
+.contact_header h1 {
+  font-size: 41px;
 }
-.load_more input {
-  padding: 20px;
+.contact_header p {
+  font-size: 15px;
+  margin-top: 30px;
+}
+form {
+  align-items: center;
+}
+form input {
+  width: 100%;
   background: transparent;
   border: none;
-  border: 1px solid black;
+  border: #f6f9f9 1px solid;
+  border-radius: 5px;
+  padding: 15px 0px;
+  margin: 10px;
 }
-input[type="button"] {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  padding: 15px 30px;
-}
-
-/* load more section css end  */
-
-/* footer section css start  */
-footer {
-  margin-top: 20px;
-  background: #f0f0f0;
+form ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
   padding: 40px 0px;
 }
-.footer_content {
+form li {
+  color: white;
+  font-size: 15px;
+}
+textarea {
+  background: transparent;
+  width: 100%;
+  border: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+input[type="button"] {
+  background: transparent;
+  border: none;
+  border: 1px solid #15a4fa;
+  margin: 0px;
+  padding: 0px;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: white;
+}
+input[type="checkbox"] {
+  width: 13px;
+  text-align: center;
+  color: #99a0a9;
+}
+input::placeholder {
+  padding: 0px 15px;
+  font-size: 15px;
+  color: white;
+}
+textarea::placeholder {
+  padding: 15px 10px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+/* newsletter section css ends */
+/* footer section css starts */
+.foot {
+  background-color: #f6f9f9;
+  padding: 25px;
+}
+footer {
+  display: flex;
   width: 80%;
-  margin: auto;
-  display: flex;
   justify-content: space-between;
-}
-.terms {
-  width: 20%;
-}
-.terms ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-.terms ul li {
-  text-decoration: none;
-  font-size: 12px;
-}
-.terms ul li a {
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  color: black;
-  text-decoration: none;
-}
 
-.social_icon {
-  width: 12%;
-  list-style: none;
-  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  margin: auto;
+  align-items: center;
 }
-.social_icon ul {
+.footer_content {
+  width: 20%;
+  text-transform: capitalize;
+}
+.social {
+  width: 15%;
+  font-size: 40px;
+}
+.social ul {
+  list-style: none;
   display: flex;
   justify-content: space-between;
 }
-.social_icon ul li {
-  list-style: none;
-  font-family: "Playfair Display", serif;
-  color: #626262;
+.social ul li {
 }
-.social_icon ul li a {
-  text-decoration: none;
-  color: #626262;
+.social ul li a {
+  color: #15a4fa;
 }
-.social_icon ul li a i {
-}
-/* footer section css end  */
+/* footer section css starts */
+/* font-family: 'Lato', sans-serif; */ ;
